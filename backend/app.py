@@ -26,7 +26,7 @@ assistant = AssistantV2(
 assistant.set_service_url(WATSON_URL)
 
 # Session setup
-session_id = assistant.create_session(assistant_id=ASSISTANT_ID).get_result()['session_id']
+# session_id = assistant.create_session(assistant_id=ASSISTANT_ID).get_result()['session_id']
 
 # Greeting/help/goodbye replies
 GREETING_REPLIES = ["Hi!", "Hey reader!", "Hello! Ready for a good book?", "Hi there 📚"]
@@ -49,6 +49,10 @@ MOOD_GENRE_MAP = {
 def chat():
     user_input = request.json.get('message')
     print("📥 User Message:", user_input)
+
+    # Create new session for every message (to avoid invalid session errors)
+    session_id = assistant.create_session(assistant_id=ASSISTANT_ID).get_result()['session_id']
+
 
     try:
         response = assistant.message(
