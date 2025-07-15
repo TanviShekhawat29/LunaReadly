@@ -4,6 +4,13 @@ Whether you're a child looking for adventure, a teen in the mood for drama, or a
 
 <img width="421" height="522" alt="image" src="https://github.com/user-attachments/assets/6f6d711a-3015-4ca6-92a8-6a3e397b4830" />
 
+## 🚀 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/LunaReadly-Open%20Chatbot-brightgreen?style=for-the-badge)](https://lunareadly-3.onrender.com)
+
+Try out the full chatbot experience here:  
+🔗 [https://lunareadly-3.onrender.com](https://lunareadly-3.onrender.com)
+
 ## Why LunaReadly?
 
 •	Modern readers are overwhelmed with choices. Most platforms rely on static reviews or basic search filters. LunaReadly reimagines this experience by:
@@ -138,6 +145,7 @@ Dialog Nodes are designed to return intelligent replies, fallback handling, and 
 
 ## Complete Website with Chatbot
 
+<img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/30f9d18b-ad16-4f3e-8b56-e815d0fbe9b9" />
 
 ## Conclusion
 
