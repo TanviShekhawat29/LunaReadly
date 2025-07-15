@@ -154,6 +154,10 @@ def chat():
         print("❌ Error:", str(e))
         traceback.print_exc()
         return jsonify({"reply": "Luna: Sorry, something went wrong 😓"})
+        
+@app.route('/')
+def home():
+    return 'LunaReadly backend is live!'
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
