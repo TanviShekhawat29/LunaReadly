@@ -90,6 +90,7 @@ def chat():
                 "colleen+hoover": "colleen+hoover"
             }
             author = author_aliases.get(author, author)
+            author = f'"{author.replace("+", " ")}"'
 
         # Fallback genre if mood is present
         if mood and not genre:
@@ -121,7 +122,7 @@ def chat():
 
             query = "+".join(query_parts) or "bestsellers"
 
-            url = f"https://www.googleapis.com/books/v1/volumes?q={query}&key={os.getenv('GOOGLE_BOOKS_API_KEY')}&maxResults=10"
+            url = f"https://www.googleapis.com/books/v1/volumes?q={query}&printType=books&key={os.getenv('GOOGLE_BOOKS_API_KEY')}&maxResults=10"
             result = requests.get(url)
 
             if result.status_code == 200:
