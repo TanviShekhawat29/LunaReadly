@@ -78,7 +78,7 @@ def chat():
         # Author alias cleanup
         if author:
             author = author.strip()
-            author_clean = author.lower()
+            author_clean = author.lower().replace("+", " ").replace(".", "")
             author_aliases = {
                 "j k rowling": "J.K. Rowling",
                 "paulo coelho": "Paulo Coelho",
@@ -89,11 +89,10 @@ def chat():
                 "dan brown": "Dan Brown",
                 "neil gaiman": "Neil Gaiman",
                 "colleen hoover": "Colleen Hoover"
-            }
+        }
 
-            author = author_aliases.get(author_clean, author)
-            if author:
-                query_parts.append(f'inauthor:"{author}"')
+    author = author_aliases.get(author_clean, author)
+    query_parts.append(f'inauthor:"{author}"')
 
 
         # Fallback genre if mood is present
