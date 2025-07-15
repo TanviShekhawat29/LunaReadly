@@ -1,6 +1,7 @@
 # LunaReadly
 LunaReadly is a smart, elegant, and conversational book recommendation platform designed to make reading discovery delightful, meaningful, and personalized. Powered by IBM Watson Assistant and the Google Books API, LunaReadly helps users find books that match their mood, genre preferences, age group, favorite authors, or desired popularity rating — all through natural, friendly conversation.
 Whether you're a child looking for adventure, a teen in the mood for drama, or an adult seeking something inspiring — LunaReadly understands your context and curates live book suggestions that match your needs in real time.
+
 <img width="421" height="522" alt="image" src="https://github.com/user-attachments/assets/6f6d711a-3015-4ca6-92a8-6a3e397b4830" />
 
 ## Why LunaReadly?
@@ -39,3 +40,54 @@ Whether you're a child looking for adventure, a teen in the mood for drama, or a
 •	Flask + Python backend handles chat requests
 •	Watson API + Google Books API logic
 •	Filters based on entities using fuzzy matching
+
+## IBM Watson Setup
+
+<img width="1226" height="293" alt="image" src="https://github.com/user-attachments/assets/0a978683-e2a8-4a1f-84cf-420cfdc3d437" />
+
+LunaReadly uses IBM Watson Assistant (Classic Experience) with:
+
+•	Intents including:
+o	recommend_by_genre
+o	recommend_by_author
+o	recommend_by_age
+o	recommend_by_mood
+o	recommend_by_rating
+o	greeting, help, goodbye
+
+<img width="1827" height="734" alt="image" src="https://github.com/user-attachments/assets/8ec4513d-c680-4d67-b355-1ec02aa7f14c" />
+
+•	Entities including:
+o	genre: fantasy, thriller, romance, horror, sci-fi, etc.
+o	mood: happy, sad, light-hearted, angry, romantic, etc.
+o	age: kids, teens, adult
+o	rating: high, medium, low
+
+<img width="1882" height="789" alt="image" src="https://github.com/user-attachments/assets/f5ac3d0a-7e9c-413c-829a-e8cf77c4f3c9" />
+
+Dialog Nodes are designed to return intelligent replies, fallback handling, and personalized prompts to guide users.
+
+<img width="1919" height="795" alt="image" src="https://github.com/user-attachments/assets/18641522-4b69-4fac-82a8-c7f2fdc43dcd" />
+
+## AI Logic in Backend
+
+•	Extracts entities from Watson response
+•	Maps genre, mood, age_group, rating, or author to Google Books search parameters
+•	Fuzzy matches if exact results aren’t found (e.g., "thriller" ≈ "suspense")
+•	Filters and sorts results based on real-time data
+•	Responds with one or multiple books with title, author, and description
+
+## UI/UX & Aesthetics
+
+•	Built using HTML, CSS, JS with bubbly, clean, pastel aesthetic
+•	Sections: Home, Features, Genres, How it Works, About
+•	Floating chatbot with Luna avatar, drag + close/open, smooth transitions
+•	Mobile-responsive and lightweight for all browsers
+
+<img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/073ed311-ecf1-4fc9-889f-0a79cdc78a4d" />
+
+## Conclusion
+
+LunaReadly isn’t just a chatbot — it’s a smart literary companion.
+
+Built with care and technology, it brings personality to reading recommendations and delivers an internship-grade user experience with real-time intelligence. Whether deployed in a hackathon, internship showcase, or portfolio, LunaReadly is designed to stand out.
