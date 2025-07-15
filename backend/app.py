@@ -79,6 +79,7 @@ def chat():
         if author:
             author = author.strip()
             author_clean = author.lower().replace("+", " ").replace(".", "")
+    
             author_aliases = {
                 "j k rowling": "J.K. Rowling",
                 "paulo coelho": "Paulo Coelho",
@@ -89,9 +90,13 @@ def chat():
                 "dan brown": "Dan Brown",
                 "neil gaiman": "Neil Gaiman",
                 "colleen hoover": "Colleen Hoover"
-            }
-            author = author_aliases.get(author_clean, author)
-            query_parts.append(f'inauthor:"{author}"')
+                }
+    
+            # Use alias if available
+            resolved_author = author_aliases.get(author_clean, author)
+    
+            # Safely encode quotes
+            query_parts.append(f'inauthor:"{resolved_author}"')
 
         # Fallback genre if mood is present
         if mood and not genre:
