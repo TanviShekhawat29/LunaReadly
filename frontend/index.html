@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LunaReadly 🌙📚</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>LunaReadly</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#genres">Genres</a>
+      <a href="#how">How It Works</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features" class="fade-in">
+      <h2>✨ Features</h2>
+      <ul>
+        <li>🎯 Personalized book recommendations</li>
+        <li>📖 Search by genre, mood, age group, rating & author</li>
+        <li>💬 AI-powered Watson chatbot</li>
+        <li>🔍 Real-time Google Books API results</li>
+      </ul>
+    </section>
+
+    <section id="genres" class="fade-in">
+      <h2>📚 Genres We Cover</h2>
+      <p>Fantasy, Romance, Thriller, Comedy, Horror, Sci-Fi, Adventure, Drama, Historical, Young Adult, and more!</p>
+    </section>
+
+    <section id="how" class="fade-in">
+      <h2>🚀 How It Works</h2>
+      <ol>
+        <li>Say hello to Luna 🤖</li>
+        <li>Tell your mood, favorite genre or author</li>
+        <li>Luna finds the perfect book 📚 for you using AI + Google Books API</li>
+      </ol>
+    </section>
+
+    <section id="about" class="fade-in">
+      <h2>💡 About LunaReadly</h2>
+      <p>
+        Built by passionate tech minds, LunaReadly is your elegant, AI-powered book buddy —
+        designed for readers of all ages looking for stories that speak to their soul.
+        Created as a project for internship by a third-year BTech student specializing in AI.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💖 by Team Luna | © 2025 LunaReadly</p>
+  </footer>
+
+  <!-- Floating Chatbot Button -->
+  <div id="chatbot-button">
+    💬 Chat with Luna
+  </div>
+
+  <!-- Chatbot Window -->
+  <div id="chatbot-window" class="hidden">
+    <div id="chatbot-header">
+      <img src="assets/luna-avatar.png" alt="Luna Avatar" />
+      <span>LunaReadly</span>
+      <button id="minimize-btn">−</button>
+    </div>
+    <div id="chatbot-messages"></div>
+    <form id="chatbot-form">
+      <input type="text" id="chatbot-input" placeholder="Ask me for a book..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
