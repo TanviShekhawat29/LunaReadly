@@ -6,6 +6,8 @@ Whether you're a child looking for adventure, a teen in the mood for drama, or a
 
 ## 🚀 Live Demo
 
+LunaReadly is deployed on **Render** and accessible here:
+
 [![Live Demo](https://img.shields.io/badge/LunaReadly-Open%20Chatbot-brightgreen?style=for-the-badge)](https://lunareadly-3.onrender.com)
 
 Try out the full chatbot experience here:  
