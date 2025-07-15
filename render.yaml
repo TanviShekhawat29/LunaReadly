@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: luna-readly-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python backend/app.py
+    envVars:
+      - key: WATSON_API_KEY
+        sync: false
+      - key: WATSON_URL
+        sync: false
+      - key: WATSON_ASSISTANT_ID
+        sync: false
+      - key: GOOGLE_BOOKS_API_KEY
+        sync: false
