@@ -77,20 +77,22 @@ def chat():
 
         # Author alias cleanup
         if author:
-            author = author.lower().replace(".", "").replace(" ", "+")
+            author = author.strip()
             author_aliases = {
-                "j+k+rowling": "jk+rowling",
-                "paulo+coelho": "paulo+coelho",
-                "chetan+bhagat": "chetan+bhagat",
-                "stephen+king": "stephen+king",
-                "agatha+christie": "agatha+christie",
-                "george+orwell": "george+orwell",
-                "dan+brown": "dan+brown",
-                "neil+gaiman": "neil+gaiman",
-                "colleen+hoover": "colleen+hoover"
+                "j k rowling": "J.K. Rowling",
+                "paulo coelho": "Paulo Coelho",
+                "chetan bhagat": "Chetan Bhagat",
+                "stephen king": "Stephen King",
+                "agatha christie": "Agatha Christie",
+                "george orwell": "George Orwell",
+                "dan brown": "Dan Brown",
+                "neil gaiman": "Neil Gaiman",
+                "colleen hoover": "Colleen Hoover"
             }
-            author = author_aliases.get(author, author)
-            author = f'"{author.replace("+", " ")}"'
+
+            author_clean = author.lower()
+            author = author_aliases.get(author_clean, author)
+            query_parts.append(f'inauthor:"{author}"')
 
         # Fallback genre if mood is present
         if mood and not genre:
