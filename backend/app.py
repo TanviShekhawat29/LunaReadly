@@ -89,11 +89,9 @@ def chat():
                 "dan brown": "Dan Brown",
                 "neil gaiman": "Neil Gaiman",
                 "colleen hoover": "Colleen Hoover"
-        }
-
-    author = author_aliases.get(author_clean, author)
-    query_parts.append(f'inauthor:"{author}"')
-
+            }
+            author = author_aliases.get(author_clean, author)
+            query_parts.append(f'inauthor:"{author}"')
 
         # Fallback genre if mood is present
         if mood and not genre:
