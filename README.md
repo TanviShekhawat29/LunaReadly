@@ -106,7 +106,7 @@ o	age: kids, teens, adult
 
 o	rating: high, medium, low
 
-<img width="1882" height="789" alt="image" src="https://github.com/user-attachments/assets/f5ac3d0a-7e9c-413c-829a-e8cf77c4f3c9" />
+<img width="1865" height="807" alt="image" src="https://github.com/user-attachments/assets/88281a2b-5d85-468f-bb61-0fd9b4694291" />
 
 Dialog Nodes are designed to return intelligent replies, fallback handling, and personalized prompts to guide users.
 
@@ -135,6 +135,9 @@ Dialog Nodes are designed to return intelligent replies, fallback handling, and 
 •	Mobile-responsive and lightweight for all browsers
 
 <img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/073ed311-ecf1-4fc9-889f-0a79cdc78a4d" />
+
+## Complete Website with Chatbot
+
 
 ## Conclusion
 
