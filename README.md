@@ -145,10 +145,6 @@ Dialog Nodes are designed to return intelligent replies, fallback handling, and 
 
 <img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/073ed311-ecf1-4fc9-889f-0a79cdc78a4d" />
 
-## Complete Website with Chatbot
-
-<img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/30f9d18b-ad16-4f3e-8b56-e815d0fbe9b9" />
-
 ## Conclusion
 
 LunaReadly isn’t just a chatbot — it’s a smart literary companion.
